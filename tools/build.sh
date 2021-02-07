@@ -11,3 +11,6 @@ rm -rf /app/web/web/wp/wp-content
 
 # Sage
 composer install --no-interaction --working-dir=/app/web/web/app/themes/${BUILD_WP_THEME_NAME}
+
+# DB
+sh /app/tools/db_import.sh
