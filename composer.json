@@ -1,0 +1,15 @@
+{
+  "name": "tomaszrusiecki/wp-lando-boilerplate",
+  "type": "project",
+  "license": "MIT",
+  "description": "Lando boilerplate - WordPress",
+  "keywords": ["lando", "development", "boilerplate", "wordpress"],
+  "homepage": "https://github.com/tomaszrusiecki/wp-lando-boilerplate",
+  "authors": [
+    {
+      "name": "Tomasz Rusiecki",
+      "email": "rusiecki.tom@gmail.com",
+      "homepage": "https://tomaszrusiecki.pl"
+    }
+  ]
+}
