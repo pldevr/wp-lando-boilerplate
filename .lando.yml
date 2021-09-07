@@ -7,16 +7,10 @@ services:
   appserver:
     run:
       - sh /app/tools/build.sh
-    overrides:
-      environment:
-        BUILD_WP_THEME_NAME: SET_WP_THEME_NAME
   node:
     type: node:14
     run:
       - sh /app/tools/build_node.sh
-    overrides:
-      environment:
-        BUILD_WP_THEME_NAME: SET_WP_THEME_NAME
   mailhog:
     type: mailhog
     hogfrom:
