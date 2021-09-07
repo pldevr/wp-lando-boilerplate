@@ -2,10 +2,11 @@
 /.idea
 /.vscode
 
+# Dependencies
+/vendor
+
 # Logs
 *.log
 
-# Hidden system files
+# System files
 *.DS_Store
-*[Tt]humbs.db
-*.Trashes
