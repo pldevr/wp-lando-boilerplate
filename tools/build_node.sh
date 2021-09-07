@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
-if [ -f ../build.conf ]; then
-  . ../build.conf
-fi
+. ./build_config.sh
 
 if [ -z $BUILD_WP_THEME_NAME ]; then
   echo "build_node.sh # Set environment: BUILD_WP_THEME_NAME";

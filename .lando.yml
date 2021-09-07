@@ -6,7 +6,7 @@ config:
 services:
   appserver:
     run:
-      - sh /app/tools/build.sh
+      - sh /app/tools/build_app.sh
   node:
     type: node:14
     run:
