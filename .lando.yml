@@ -1,4 +1,4 @@
-name: SET_APP_NAME
+name: wp-app-boilerplate
 recipe: wordpress
 config:
   php: '7.4'
