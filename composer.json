@@ -11,5 +11,11 @@
       "email": "rusiecki.tom@gmail.com",
       "homepage": "https://tomaszrusiecki.pl"
     }
-  ]
+  ],
+  "scripts": {
+    "post-create-project-cmd": [
+      "rm README.md",
+      "rm LICENSE"
+    ]
+  }
 }
