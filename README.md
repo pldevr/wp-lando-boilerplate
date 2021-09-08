@@ -1,7 +1,7 @@
-# Lando boilerplate - WordPress
+# App boilerplate - WordPress
 
 WIP: Installation
 ------------
 ```
-composer create-project --stability=dev tomaszrusiecki/wp-lando-boilerplate
+composer create-project --stability=dev tomaszrusiecki/wp-app-boilerplate
 ```
