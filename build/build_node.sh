@@ -8,4 +8,4 @@ if [ -z $BUILD_WP_THEME_NAME ]; then
 fi
 
 # Sage
-cd /app/web/web/app/themes/${BUILD_WP_THEME_NAME} && npm i && npm run build:production
+cd ${BUILD_PATH}/web/web/app/themes/${BUILD_WP_THEME_NAME} && npm i && npm run build:production

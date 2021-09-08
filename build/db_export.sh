@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-wp db export /app/db/db.sql
+wp db export ${BUILD_PATH}/db/db.sql
