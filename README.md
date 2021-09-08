@@ -7,10 +7,6 @@ composer create-project --stability=dev tomaszrusiecki/wp-app-boilerplate
 ```
 
 ### Bedrock
-```sh
-git clone --depth=1 https://github.com/tomaszrusiecki/bedrock.git web && rm -rf web/.git  
-```
-
 `build/build.sh`
 ```sh
 # Bedrock
