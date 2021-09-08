@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-. ./build_config.sh
+. ./config.sh
 
 if [ -z $BUILD_WP_THEME_NAME ]; then
-  echo "build.sh # Set environment: BUILD_WP_THEME_NAME";
-  exit 1;
+  echo "build.sh # Set environment: BUILD_WP_THEME_NAME"
+  exit 1
 fi
 
 # Bedrock
