@@ -1,7 +1,7 @@
 name: wp-app-boilerplate
 recipe: wordpress
 config:
-  php: '7.4'
+  php: '8.0'
   webroot: web/web
 services:
   appserver:
