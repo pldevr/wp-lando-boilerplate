@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-. ./config.sh
+. $(dirname $(realpath $0))/config.sh
