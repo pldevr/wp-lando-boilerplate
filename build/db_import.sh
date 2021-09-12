@@ -2,7 +2,7 @@
 
 . $(dirname $(realpath $0))/config.sh
 
-if [ ! -f ${BUILD_PATH}/db/db.sql ]; then
+if [[ ! -f ${BUILD_PATH}/db/db.sql ]]; then
   echo "db_import.sh # DB file does not exist"
   exit 1
 fi

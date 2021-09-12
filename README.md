@@ -22,7 +22,7 @@ BUILD_WP_THEME_NAME=
 
 `build/build.sh`
 ```sh
-if [ -z $BUILD_WP_THEME_NAME ]; then
+if [[ -z $BUILD_WP_THEME_NAME ]]; then
   echo "build.sh # required: BUILD_WP_THEME_NAME"
   exit 1
 fi
@@ -33,7 +33,7 @@ composer install --no-interaction --working-dir=${BUILD_PATH}/web/web/app/themes
 
 `build/build_node.sh`
 ```sh
-if [ -z $BUILD_WP_THEME_NAME ]; then
+if [[ -z $BUILD_WP_THEME_NAME ]]; then
   echo "build_node.sh # required: BUILD_WP_THEME_NAME"
   exit 1
 fi

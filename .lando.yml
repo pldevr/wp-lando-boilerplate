@@ -6,11 +6,11 @@ config:
 services:
   appserver:
     run:
-      - sh /app/build/build.sh
+      - bash /app/build/build.sh
   node:
     type: node:14
     run:
-      - sh /app/build/build_node.sh
+      - bash /app/build/build_node.sh
   mailhog:
     type: mailhog
     hogfrom:
