@@ -1,11 +1,11 @@
-# App boilerplate - WordPress
-
 Installation
 ------------
 ```sh
-composer create-project --stability=dev tomaszrusiecki/wp-app-boilerplate
+composer create-project --no-install --remove-vcs --stability=dev tomaszrusiecki/wp-app-boilerplate
 ```
 
+Examples
+------------
 ### Bedrock
 `build/build.sh`
 ```sh
