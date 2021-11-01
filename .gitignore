@@ -12,5 +12,6 @@
 *.DS_Store
 
 # Other
+/.htaccess
 /build.local.conf
 /wp-cli.local.yml
