@@ -1,9 +1,9 @@
 # IDE
-/.idea
-/.vscode
+.idea/
+.vscode/
 
 # Dependencies
-/vendor
+vendor/
 
 # Logs
 *.log
@@ -12,6 +12,4 @@
 *.DS_Store
 
 # Other
-/.htaccess
-/build.local.conf
-/wp-cli.local.yml
+db/
