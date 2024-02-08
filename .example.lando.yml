@@ -1,0 +1,31 @@
+name: # SET_APP_NAME
+recipe: wordpress
+config:
+  via: nginx
+  webroot: web
+  php: # SET_PHP_VERSION e.g. '8.2'
+services:
+  node:
+    type: # SET_NODE_VERSION e.g. node:20
+  mailhog:
+    type: mailhog
+    hogfrom:
+      - appserver
+tooling:
+  tools-build:
+    dir: /app/.tools/bin
+    cmd:
+      - appserver: bash build.sh
+      - node: bash build-node.sh
+  tools-db-export:
+    service: database
+    dir: /app/.tools
+    cmd: /helpers/sql-export.sh db/dump.sql
+  tools-db-import:
+    service: database
+    dir: /app/.tools
+    cmd: /helpers/sql-import.sh db/dump.sql
+  tools-db-replace:
+    service: appserver
+    dir: /app/.tools/bin
+    cmd: bash db-replace.sh
