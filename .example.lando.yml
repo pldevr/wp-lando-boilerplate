@@ -3,8 +3,8 @@ recipe: wordpress
 config:
   via: nginx
   webroot: web
-  php: # SET_PHP_VERSION e.g. '8.2'
-  composer_version: # SET_COMPOSER_VERSION e.g '2.7.1'
+  php: # SET_PHP_VERSION e.g. 8.2
+  composer_version: # SET_COMPOSER_VERSION e.g 2.8.1
 services:
   node:
     type: # SET_NODE_VERSION e.g. node:20
