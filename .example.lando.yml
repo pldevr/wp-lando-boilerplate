@@ -8,11 +8,16 @@ config:
 services:
   node:
     type: # SET_NODE_VERSION e.g. node:20
+    run:
+      - wget -qO- https://get.pnpm.io/install.sh | ENV="$HOME/.bashrc" PNPM_VERSION=<version> SHELL="$(which bash)" bash - # SET_PNPM_VERSION e.g 9.12.0
   mailhog:
     type: mailhog
     hogfrom:
       - appserver
 tooling:
+  pnpm:
+    service: node
+    cmd: /home/node/.local/share/pnpm/pnpm
   tools-build:
     dir: /app/.tools/bin
     cmd:
