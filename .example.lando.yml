@@ -9,7 +9,7 @@ services:
   node:
     type: # SET_NODE_VERSION e.g. node:20
     run:
-      - wget -qO- https://get.pnpm.io/install.sh | ENV="$HOME/.bashrc" PNPM_VERSION=<version> SHELL="$(which bash)" bash - # SET_PNPM_VERSION e.g 9.12.0
+      - wget -qO- https://get.pnpm.io/install.sh | ENV="$HOME/.bashrc" PNPM_VERSION=version SHELL="$(which bash)" bash - # SET_PNPM_VERSION e.g 9.12.3
   mailhog:
     type: mailhog
     hogfrom:
